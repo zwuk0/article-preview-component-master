@@ -38,7 +38,7 @@ body {
   color: #525c66;
 }
 .text-top p {
-  margin-top: 20px;
+  margin-top: 10px;
   color: #808791;
 }
 .profile {
@@ -82,7 +82,7 @@ body {
   letter-spacing: 4px;
   color: hsl(212, 23%, 69%);
 }
-svg path {
+.svg {
   fill: #545864;
 }
 .text-icons {
@@ -95,11 +95,20 @@ svg path {
   margin-left: 15px;
 }
 .profile-toggle {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px 30px 35px;
-  border-radius: 0 0 10px 10px;
   background-color: hsl(217, 19%, 35%);
+}
+
+.img-name-toggle {
+  display: none;
+}
+.arrow-toggle {
+  background-color: #71839b;
+}
+.share-toggle {
+  display: flex;
+}
+.svg-toggle {
+  fill: #ffffff;
 }
 
 @media screen and (min-width: 800px) {
@@ -132,7 +141,7 @@ svg path {
     /* margin-top: px; */
     display: flex;
     justify-content: space-between;
-    padding: 10px 30px 18px 35px;
+    padding: 10px 40px 18px 35px;
     border-radius: 0 0 10px 0;
     position: relative;
   }
@@ -143,7 +152,7 @@ svg path {
     padding: 10px 30px 10px 30px;
     border-radius: 10px;
   }
-  .share::after {
+  .share-toggle::after {
     content: "";
     width: 0;
     height: 0;
@@ -152,9 +161,24 @@ svg path {
     border-top: 10px solid hsl(217, 19%, 35%);
     position: absolute;
     top: 100%;
-    left: 50%;
+    left: 53%;
   }
+  .profile-toggle {
+    background-color: #ffffff;
+  }
+  .img-name-toggle {
+    display: flex;
+  }
+  /* .arrow-toggle {
+    background-color: aqua;
+  } */
   .share-toggle {
-    display: none;
+    display: flex;
+    position: absolute;
+    bottom: 100%;
+    left: 60%;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 35%);
   }
 }
