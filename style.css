@@ -133,6 +133,9 @@ body {
   .text-top h1 {
     font-size: 20px;
   }
+  .text-top p {
+    margin-top: 5px;
+  }
   .cont-one img {
     /* width: auto; */
     height: 300px;
@@ -141,7 +144,7 @@ body {
     /* margin-top: px; */
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px 18px 35px;
+    padding: 10px 50px 18px 40px;
     border-radius: 0 0 10px 0;
     position: relative;
   }
